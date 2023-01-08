@@ -8,11 +8,11 @@ render(){
     // jsx
     <main>
         <Pizza pie="Detroit" toppings="Cheese" crust="Detroit Style"/>
-        <Pizza pie="New York Thin" toppings="Cheese"/>
-        <Pizza pie="Chicago Deep Dish" toppings="Cheese"/>
-        <Pizza pie="Oven Grinder" toppings="Cheese"/>
-        <Pizza pie="Brick Oven" toppings="Cheese"/>
-        <Pizza pie="Calzone" toppings="Cheese"/>
+        <Pizza pie="New York Thin" toppings="Cheese" crust="Thin Crust"/>
+        <Pizza pie="Chicago Deep Dish" toppings="Cheese" crust="Hand Toss"/>
+        <Pizza pie="Oven Grinder" toppings="Cheese" crust="Hand Toss"/>
+        <Pizza pie="Brick Oven" toppings="Cheese" crust="Hand Toss"/>
+        <Pizza pie="Calzone" toppings="Cheese" crust="Hand Toss"/>
 
     </main>
   )

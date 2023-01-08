@@ -2,7 +2,7 @@ import React from "react";
 
 class Pizza extends React.Component {
   render() {
-    console.log('dop we have props topping?', this.props.toppings);
+    console.log('dop we have props topping?', this.props);
 
     return (
 
@@ -13,22 +13,7 @@ class Pizza extends React.Component {
           <h4>{this.props.crust}</h4>
           <p>Is this your favorite pizza</p>
         </article>
-        {/* <article>
-          <h3>Chicago</h3>
-          <p>Is this your favorite pizza</p>
-        </article>
-        <article>
-          <h3>{this.props.pie}</h3>
-          <p>Is this your favorite pizza</p>
-        </article>
-        <article>
-          <h3>{this.props.pie}</h3>
-          <p>Is this your favorite pizza</p>
-        </article>
-        <article>
-          <h3>{this.props.pie}</h3>
-          <p>Is this your favorite pizza</p>
-        </article> */}
+       
       </>
     );
   }
