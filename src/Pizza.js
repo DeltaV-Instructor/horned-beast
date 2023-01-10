@@ -52,8 +52,8 @@ class Pizza extends React.Component {
         What? True : False 
         BooleanValue ? console.log('true') : console.log('false');
         */}
-          <div>{this.state.pizzaNeeded ? "I need this Pizza!" : ""}</div>
-          <div>{this.state.pizzaNeeded ? "I need this Pizza!" : ""}</div>
+          
+          <div>{this.state.pizzaNeeded ? 'I need this Pizza!' : ''}</div>
           <Button
             variant="warning"
             onClick={this.pizzaNeeded}
