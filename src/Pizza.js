@@ -9,28 +9,6 @@ class Pizza extends React.Component {
           <h3>{this.props.pie}</h3>
           <p>Is this your favorite pizza</p>
         </article>
-
-        {/* 
-        <article>
-        <h3>Detroit</h3>
-        <p>Is this your favorite pizza</p>
-      </article>
-      <article>
-        <h3>Chicago</h3>
-        <p>Is this your favorite pizza</p>
-      </article>
-      <article>
-        <h3>{this.props.pie}</h3>
-        <p>Is this your favorite pizza</p>
-      </article>
-      <article>
-        <h3>{this.props.pie}</h3>
-        <p>Is this your favorite pizza</p>
-      </article>
-      <article>
-        <h3>{this.props.pie}</h3>
-        <p>Is this your favorite pizza</p>
-      </article> */}
       </>
     );
   }
