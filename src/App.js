@@ -1,16 +1,16 @@
-import React from "react";
-import "./App.css";
-import Header from "./Header.js";
-import Main from "./Main.js";
+import React from 'react';
+import Header from './Header.js';
+import Main from './Main.js';
+import './App.css';
 
 class App extends React.Component {
+
   render() {
     return (
-      //add components
       <>
-        <Header />
-        <Main />
-        <footer>DeltaV 2023</footer>
+        <Header/>
+        <Main/>
+        <footer>DeltaV: 2023</footer>
       </>
     );
   }
