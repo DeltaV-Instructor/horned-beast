@@ -4,8 +4,11 @@ import data from "./data.json";
 import './Main.css';
 
 class Main extends React.Component {
+  // how do we get this data out.
   render() {
     console.log("data? :", data);
+
+    // do some js stuff before we return so let build components here
 
     let pizzas = [];
 
