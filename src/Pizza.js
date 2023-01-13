@@ -1,6 +1,6 @@
 import React from "react";
 import "./Pizza.css";
-import Button from "react-bootstrap/Button";
+import Button from 'react-bootstrap/Button';
 
 class Pizza extends React.Component {
   //functions
@@ -21,7 +21,6 @@ class Pizza extends React.Component {
     //method to allow us to update state
     this.setState({
       likes: this.state.likes + 1,
-      bananas: "That Bananas",
     });
   };
 
