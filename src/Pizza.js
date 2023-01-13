@@ -1,6 +1,6 @@
 import React from "react";
 import "./Pizza.css";
-import Button from 'react-bootstrap/Button';
+import Button from "react-bootstrap/Button";
 
 class Pizza extends React.Component {
   //functions
@@ -21,6 +21,8 @@ class Pizza extends React.Component {
     //method to allow us to update state
     this.setState({
       likes: this.state.likes + 1,
+      //could add things to state here 
+      // bananas: 'Thats Bananas',
     });
   };
 
@@ -39,20 +41,23 @@ class Pizza extends React.Component {
   render() {
     console.log("our pizza properties: ", this.props);
     return (
+      // 1. we need to render all pizza names and images
       <>
         <article>
-          <h3>{this.props.pizzaName}</h3>
+          <h4>🍕 {this.props.pizzaName}</h4>
           <p>{this.state.likes} Likes!</p>
           <p onClick={this.handleLikes}>Click to like this pizza!</p>
           <img src={this.props.imageURL} alt={this.props.pizzaName} />
 
+          {/* <p>{this.state.bananas}</p> */}
+          {/* <button>html button</button> */}
           {/* 
         Ternary Operator
         What? True : False 
         BooleanValue ? console.log('true') : console.log('false');
         */}
-          
-          <div>{this.state.pizzaNeeded ? 'I need this Pizza!' : ''}</div>
+
+          <div>{this.state.pizzaNeeded ? "I need this Pizza!" : ""}</div>
           <Button
             variant="warning"
             onClick={this.pizzaNeeded}
