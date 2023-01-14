@@ -1,29 +1,32 @@
 import React from "react";
 import Pizza from "./Pizza.js";
-import data from "./data.json";
-import './Main.css';
+import "./Main.css";
+import { Container, Row } from "react-bootstrap";
+
 
 class Main extends React.Component {
   render() {
-    console.log("data? :", data);
-
     let pizzas = [];
 
-    data.forEach((newPizza, index) => {
+    this.props.data.forEach((newPizza, index) => {
       pizzas.push(
-        <Pizza pizzaName={newPizza.name} imageURL={newPizza.imageURL} key={index} />
+        <Pizza
+          pizzaName={newPizza.name}
+          imageURL={newPizza.imageURL}
+          key={index}
+          addPizzaEmoji={this.props.addPizzaEmoji}
+          handleOnShow={this.props.handleOnShow}
+        />
       );
     });
-    console.log('data compon', pizzas);
+    //  console.log('props', this.props);
     return (
       <main>
-      {pizzas}
-        {/* <Pizza pie="Detroit" toppings="Cheese" crust="Detroit Style"/>
-        <Pizza pie="New York Thin"/>
-        <Pizza pie="Chicago Deep Dish"/>
-        <Pizza pie="Oven Grinder"/>
-        <Pizza pie="Brick Oven"/>
-        <Pizza pie="Calzone"/> */}
+        <Container>
+          <Row lg={4} md={3} sm={2} xs={1}>
+            {pizzas}
+          </Row>
+        </Container>
       </main>
     );
   }
