@@ -45,3 +45,14 @@ h4 {
   /* display: inline; */
   padding: 10px;
 }
+
+
+
+.card .card-title {
+  background-color: rgba(15, 78, 172, 0.735);
+  border-radius: 10px;
+  /* display: inline; */
+  padding: 10px;
+  font-size: 1.5vw;
+  color: whitesmoke;
+}
